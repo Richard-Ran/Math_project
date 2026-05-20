@@ -275,7 +275,7 @@ const y_imag = Math.exp(${sigma} * t) * Math.sin(${omega} * t);`);
         </nav>
 
         {/* 3. Main Center Content Viewport */}
-        <main className="flex-1 ml-[240px] p-6 lg:p-8 flex flex-col gap-6 overflow-y-auto max-w-7xl mx-auto w-full">
+        <main className="flex-1 ml-[240px] p-6 lg:p-8 flex flex-col gap-6 overflow-y-auto w-full">
           {/* Overlay Panel: Theory & Help */}
           {showHelp && (
             <div className="bg-[#131b2e] border border-cyan-500/20 rounded-lg p-6 flex flex-col gap-4 shadow-xl">
