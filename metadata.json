@@ -1,0 +1,6 @@
+{
+  "name": "ComplexExp Visualizer",
+  "description": "An interactive mathematical visualizer for complex exponentials, displaying their trajectories in the complex plane and amplitude waves in the time domain.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
