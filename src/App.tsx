@@ -485,10 +485,10 @@ y_imag = np.exp(sigma * t) * np.sin(omega * t)`}
                     }}
                     className="custom-slider mt-2"
                   />
-                  <div className="flex justify-between text-[10px] text-[#c2c6d6] font-mono mt-1">
-                    <span className={sigma < -0.1 ? 'text-emerald-400 font-medium' : ''}>STABLE (-2.0)</span>
-                    <span className={Math.abs(sigma) <= 0.05 ? 'text-blue-400 font-medium' : ''}>NEUTRAL (0.0)</span>
-                    <span className={sigma > 0.1 ? 'text-rose-400 font-medium' : ''}>UNSTABLE (1.0)</span>
+                  <div className="relative text-[10px] text-[#c2c6d6] font-mono mt-1 h-4 select-none">
+                    <span className={`absolute left-0 ${sigma < -0.1 ? 'text-emerald-400 font-medium' : ''}`}>STABLE (-2.0)</span>
+                    <span className={`absolute left-[66.67%] -translate-x-1/2 ${Math.abs(sigma) <= 0.05 ? 'text-blue-400 font-medium' : ''}`}>NEUTRAL (0.0)</span>
+                    <span className={`absolute right-0 ${sigma > 0.1 ? 'text-rose-400 font-medium' : ''}`}>UNSTABLE (1.0)</span>
                   </div>
                 </div>
 
